@@ -204,7 +204,7 @@ def main_(c_source_file, ir_tokens, rule_database_file, insert_line):
     
     # compile the c source file 
     compile_c_source(c_source_file)
-    nvcc_compile_c_source(c_source_file)
+    #nvcc_compile_c_source(c_source_file)
     
     # run the compiled file with perf stat to gather metrics 
     cpu_total_cycles, cpu_total_time = run_perf_stat("a.out")
